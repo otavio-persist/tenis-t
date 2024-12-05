@@ -6,9 +6,8 @@ import datetime
 from supabase import create_client, Client
 import streamlit as st
 import os
-
+os.environ["OPENCV_VIDEOIO_PRIORITY_MSMF"] = "0"
 os.environ["PYTHON_EGG_CACHE"] = "/tmp/.python-eggs"
-
 # Configuração do Supabase
 url = "https://ckixycdahzshcdkiqxxs.supabase.co"  # Substitua pela URL do seu projeto Supabase
 key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNraXh5Y2RhaHpzaGNka2lxeHhzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzMyNTQ4OTQsImV4cCI6MjA0ODgzMDg5NH0.AuMuwRSpVKytamrF2D2Ea961dVd6N6RTMxf-LQicLxw"  # Substitua pela sua chave de API
