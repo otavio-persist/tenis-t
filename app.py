@@ -5,6 +5,9 @@ import time
 import datetime
 from supabase import create_client, Client
 import streamlit as st
+import os
+
+os.environ["PYTHON_EGG_CACHE"] = "/tmp/.python-eggs"
 
 # Configuração do Supabase
 url = "https://ckixycdahzshcdkiqxxs.supabase.co"  # Substitua pela URL do seu projeto Supabase
